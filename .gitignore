@@ -11,3 +11,8 @@ hs_err_pid*
 .settings/
 target/
 
+#Ignoring jar files except one
+
+lib/*
+!lib/PNetReplayer-PM4KNIME.jar.zip
+
