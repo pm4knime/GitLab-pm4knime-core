@@ -47,6 +47,7 @@
 			</fileset>
 			<fileset dir="${ivy.home}\cache\prom-libs" includes="**\*.jar">
 			</fileset>
+			<fileset dir = "${lib.project.dir}\lib" includes="**\*.jar"> </fileset>
 		</copy>
 	</target>
 
@@ -57,5 +58,5 @@
 		</delete>
 
 	</target>
-	<target name="main" depends="set, lib-resolve, copy-deps" /> 
+	<target name="main" depends="set ,lib-resolve, copy-deps" /> 
 </project>
